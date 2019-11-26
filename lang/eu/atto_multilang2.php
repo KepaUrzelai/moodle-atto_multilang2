@@ -28,4 +28,5 @@ $string['highlight_desc'] = 'Bisualki nabarmendu multi-hizkuntza eduki mugatzail
 $string['customcss'] = 'CSS mugatzaileentzat';
 $string['customcss_desc'] = "<br>Erabilitako CSS-a multi-hizkuntza eduki mugatzaileentzat.
 <p><b>Kontuz:</b> jarri soilik CSS GORPUTZAREN ARAUAK, selektoreak baztertuz, lehenetsitako balorean bezala.</p>";
+$string['other'] = 'Besteak';
 $string['privacy:metadata'] = 'Atto editorerako Eduki Eleanitza (v2) pluginak ez ditu datu pertsonalik grodetzen';
