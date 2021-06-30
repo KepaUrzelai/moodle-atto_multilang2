@@ -43,6 +43,6 @@ class provider implements
      * @return  string
      */
     public static function get_reason() : string {
-        return get_string('privacy:metadata', 'atto_multilang2');
+        return 'privacy:metadata';
     }
 }
