@@ -100,7 +100,13 @@ var CLASSES = {
                     host = this.get('host');
                     form = host.textarea.ancestor('form');
                     if (form) {
-                        form.on('submit', this._cleanMlangTags, this);
+                        form.on('submit',
+                            function () {
+                                if (host.plugins.html.get('isHTML')) {
+                                    host.plugins.html._toggleHTML();
+                                }
+                                this._cleanMlangTags();
+                            }, this);
                     }
 
                     // Listen to every change of the text cursor in the text area, to see if
