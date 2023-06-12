@@ -50,7 +50,7 @@ class atto_multilang2_provider_testcase extends provider_testcase {
      *
      * @return void
      */
-    protected function setUp() {
+    protected function setUp(): void {
         parent::setUp();
         $this->resetAfterTest(true);
         $this->provider = new provider();
@@ -65,7 +65,7 @@ class atto_multilang2_provider_testcase extends provider_testcase {
         global $CFG;
         $test = array (
             'sitelang' => 'en',
-            'privacymetadata' => 'The Multi-Language Content (v2) plugin for the atto editor does not store any personal data',
+            'privacymetadata' => 'privacy:metadata',
         );
 
         $curlang = $CFG->lang;
